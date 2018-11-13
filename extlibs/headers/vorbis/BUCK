@@ -1,0 +1,14 @@
+prebuilt_cxx_library(
+  name = 'vorbis', 
+  header_namespace = 'vorbis', 
+  header_only = True, 
+  exported_headers = subdir_glob([
+    ('', '**/*.h'), 
+  ]), 
+  deps = [
+    '//extlibs/headers/ogg:ogg', 
+  ], 
+  visibility = [
+    'PUBLIC', 
+  ], 
+)

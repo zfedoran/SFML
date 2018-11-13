@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'sound', 
+  srcs = [
+    'Sound.cpp', 
+  ], 
+  deps = [
+    '//:sfml'
+  ], 
+)

@@ -1,0 +1,11 @@
+prebuilt_cxx_library(
+  name = 'freetype2', 
+  header_namespace = '', 
+  header_only = True, 
+  exported_headers = subdir_glob([
+    ('', '**/*.h'), 
+  ]), 
+  visibility = [
+    'PUBLIC', 
+  ], 
+)

@@ -1,0 +1,11 @@
+prebuilt_cxx_library(
+  name = 'ogg', 
+  header_namespace = 'ogg', 
+  header_only = True, 
+  exported_headers = subdir_glob([
+    ('', '**/*.h'), 
+  ]), 
+  visibility = [
+    'PUBLIC', 
+  ], 
+)

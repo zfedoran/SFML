@@ -1,0 +1,22 @@
+[cxx]
+  should_remap_host_platform = true
+  untracked_headers = error
+  untracked_headers_whitelist = /usr/include/.*
+
+[project]
+  ignore = .git
+
+[repositories]
+  buckaroo.github.buckaroo-pm.host-app-kit = ./buckaroo-packages/github/buckaroo-pm/host-app-kit
+  buckaroo.github.buckaroo-pm.host-application-services = ./buckaroo-packages/github/buckaroo-pm/host-application-services
+  buckaroo.github.buckaroo-pm.host-carbon = ./buckaroo-packages/github/buckaroo-pm/host-carbon
+  buckaroo.github.buckaroo-pm.host-cocoa = ./buckaroo-packages/github/buckaroo-pm/host-cocoa
+  buckaroo.github.buckaroo-pm.host-core-foundation = ./buckaroo-packages/github/buckaroo-pm/host-core-foundation
+  buckaroo.github.buckaroo-pm.host-core-graphics = ./buckaroo-packages/github/buckaroo-pm/host-core-graphics
+  buckaroo.github.buckaroo-pm.host-core-services = ./buckaroo-packages/github/buckaroo-pm/host-core-services
+  buckaroo.github.buckaroo-pm.host-io-kit = ./buckaroo-packages/github/buckaroo-pm/host-io-kit
+  buckaroo.github.buckaroo-pm.host-opengl = ./buckaroo-packages/github/buckaroo-pm/host-opengl
+  buckaroo.github.buckaroo-pm.luadist-freetype = ./buckaroo-packages/github/buckaroo-pm/luadist-freetype
+  buckaroo.github.buckaroo-pm.xiph-flac = ./buckaroo-packages/github/buckaroo-pm/xiph-flac
+  buckaroo.github.buckaroo-pm.xiph-ogg = ./buckaroo-packages/github/buckaroo-pm/xiph-ogg
+  buckaroo.github.buckaroo-pm.xiph-vorbis = ./buckaroo-packages/github/buckaroo-pm/xiph-vorbis

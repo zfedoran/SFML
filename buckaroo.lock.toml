@@ -1,0 +1,105 @@
+manifest = "7fd295655a127890b1d1d1e790b695f137af48875a01025fe1ae5ef763c8d64d"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-app-kit"
+target = "//:app-kit"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-application-services"
+target = "//:application-services"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-carbon"
+target = "//:carbon"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-cocoa"
+target = "//:cocoa"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-foundation"
+target = "//:core-foundation"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-graphics"
+target = "//:core-graphics"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-services"
+target = "//:core-services"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-io-kit"
+target = "//:io-kit"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-opengl"
+target = "//:opengl"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/luadist-freetype"
+target = "//:freetype"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-flac"
+target = "//:flac"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-ogg"
+target = "//:ogg"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-vorbis"
+target = "//:vorbis"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-app-kit"
+revision = "ac1f9979586569580ef613292e5c5040c43b8790"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-application-services"
+revision = "0125114db3ee4abe310305dbbf6d6c7c76f42af9"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-carbon"
+revision = "fb7fb290b4da3e2bb20b805b14a2624107d20f86"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-cocoa"
+revision = "72ea2945d7e139d9f4803c726339778e619b8cdb"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-core-foundation"
+revision = "fd7081ffe1244afb86c41c2d41d3603f851feae8"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-core-graphics"
+revision = "ca8d35a5e235308ea202b18bf8b595ee82e3412c"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-core-services"
+revision = "017da4f0862b4e646ecff2c514442dd8cd3ade5c"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-io-kit"
+revision = "68cf79a5a0cecfb6d68896ad29d3b0c001849dd5"
+
+[[lock]]
+name = "github.com/buckaroo-pm/host-opengl"
+revision = "c99cc680bca2ac078435ce53b93a697e0161f52f"
+
+[[lock]]
+name = "github.com/buckaroo-pm/luadist-freetype"
+revision = "fdec3a0229063b6bcdf4c7574e5fd41e2f22fcff"
+
+[[lock]]
+name = "github.com/buckaroo-pm/xiph-flac"
+revision = "7b0fb1a4b74310ab0ace51d2fca52d746ff24f0f"
+
+[[lock]]
+name = "github.com/buckaroo-pm/xiph-ogg"
+revision = "82b18eecd378eff6f5fd77db8c49cc1f8deeadff"
+
+[[lock]]
+name = "github.com/buckaroo-pm/xiph-vorbis"
+revision = "e1346b8610645622df0614b371f50325e89b41f2"
