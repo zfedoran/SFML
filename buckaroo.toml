@@ -37,7 +37,27 @@ package = "github.com/buckaroo-pm/host-opengl"
 version = "branch=master"
 
 [[dependency]]
+package = "github.com/buckaroo-pm/host-pthread"
+version = "branch=master"
+
+[[dependency]]
 package = "github.com/buckaroo-pm/luadist-freetype"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-gl"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-udev"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-x11"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-xrandr"
 version = "branch=master"
 
 [[dependency]]

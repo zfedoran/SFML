@@ -1,16 +1,26 @@
+load('//:buckaroo_macros.bzl', 'buckaroo_deps', 'buckaroo_deps_from_package')
+
 macos_preprocessor_flags = [
-  '-DSFML_OS_MACOSX=1', 
-  '-DSFML_BUILD_FRAMEWORKS=1', 
+  '-DSFML_OS_MACOSX=1',
+  '-DSFML_BUILD_FRAMEWORKS=1',
+]
+
+linux_preprocessor_flags = [
+  '-DSFML_OS_LINUX=1',
 ]
 
 unix_srcs = glob([
   'src/SFML/**/Unix/**/*.cpp',
 ])
 
-linux_srcs = glob([
-  'src/SFML/**/Unix/**/*.cpp',
+egl_srcs = glob([
+  'src/SFML/**/Egl*.cpp',
   'src/SFML/**/Egl*.cpp',
   'src/SFML/**/EGL*.cpp',
+])
+
+linux_srcs = glob([
+  'src/SFML/**/Unix/**/*.cpp',
 ])
 
 macos_srcs = glob([
@@ -18,6 +28,10 @@ macos_srcs = glob([
   'src/SFML/**/OSX/**/*.cpp',
   'src/SFML/**/OSX/**/*.mm',
   'src/SFML/**/OSX/**/*.m',
+])
+
+openbsd_srcs = glob([
+  'src/SFML/**/OpenBSD/**/*.cpp',
 ])
 
 freebsd_srcs = glob([
@@ -35,26 +49,27 @@ android_srcs = glob([
   'src/SFML/**/Android/**/*.cpp',
 ])
 
-platform_srcs = unix_srcs + linux_srcs + macos_srcs + windows_srcs + freebsd_srcs + android_srcs
+platform_srcs = unix_srcs + linux_srcs + macos_srcs + \
+  windows_srcs + freebsd_srcs + android_srcs + \
+  openbsd_srcs + egl_srcs
 
-linux_exported_linker_flags = [
-  '-lX11',
-  '-lGL',
-  '-lpthread',
-]
+macos_deps = \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-core-foundation') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-core-services') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-core-graphics') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-io-kit') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-app-kit') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-carbon') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-cocoa') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-opengl') + \
+  [ '//extlibs/libs-osx/Frameworks:openal' ]
 
-macos_deps = [
-  'buckaroo.github.buckaroo-pm.host-application-services//:application-services', 
-  'buckaroo.github.buckaroo-pm.host-core-foundation//:core-foundation', 
-  'buckaroo.github.buckaroo-pm.host-core-services//:core-services', 
-  'buckaroo.github.buckaroo-pm.host-core-graphics//:core-graphics', 
-  'buckaroo.github.buckaroo-pm.host-io-kit//:io-kit', 
-  'buckaroo.github.buckaroo-pm.host-app-kit//:app-kit', 
-  'buckaroo.github.buckaroo-pm.host-carbon//:carbon', 
-  'buckaroo.github.buckaroo-pm.host-opengl//:opengl', 
-  'buckaroo.github.buckaroo-pm.host-cocoa//:cocoa', 
-  '//extlibs/libs-osx/Frameworks:openal', 
-]
+linux_deps = \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/host-pthread') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-x11') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-xrandr') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-udev') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-gl')
 
 cxx_library(
   name = 'sfml',
@@ -69,8 +84,9 @@ cxx_library(
     ('src/SFML', '**/*.h'),
   ]),
   platform_preprocessor_flags = [
-    ('macos.*', macos_preprocessor_flags), 
-  ], 
+    ('macos.*', macos_preprocessor_flags),
+    ('linux.*', linux_preprocessor_flags),
+  ],
   srcs = glob([
     'src/SFML/**/*.cpp',
   ], exclude = platform_srcs),
@@ -84,21 +100,18 @@ cxx_library(
   exported_preprocessor_flags = [
     '-DHAVE_PROTOTYPES=1',
   ],
-  exported_platform_linker_flags = [
-    ('default', linux_exported_linker_flags),
-    ('linux.*', linux_exported_linker_flags),
+  deps =
+    buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-ogg') +
+    buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-flac') +
+    buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-vorbis') +
+    buckaroo_deps_from_package('github.com/buckaroo-pm/luadist-freetype') + [
+    '//extlibs/headers/AL:al',
+    '//extlibs/headers/stb_image:stb_image',
   ],
-  deps = [
-    'buckaroo.github.buckaroo-pm.xiph-ogg//:ogg', 
-    'buckaroo.github.buckaroo-pm.xiph-flac//:flac', 
-    'buckaroo.github.buckaroo-pm.xiph-vorbis//:vorbis', 
-    'buckaroo.github.buckaroo-pm.luadist-freetype//:freetype', 
-    '//extlibs/headers/AL:al', 
-    '//extlibs/headers/stb_image:stb_image', 
-  ], 
   platform_deps = [
-    ('macos.*', macos_deps), 
-  ], 
+    ('macos.*', macos_deps),
+    ('linux.*', linux_deps),
+  ],
   visibility = [
     'PUBLIC',
   ],
