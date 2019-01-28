@@ -2,8 +2,8 @@ prebuilt_cxx_library(
   name = 'stb_image', 
   header_namespace = '', 
   header_only = True, 
-  exported_headers = subdir_glob([
-    ('', '**/*.h'), 
+  exported_headers = glob([
+    '*.h', 
   ]), 
   visibility = [
     'PUBLIC', 

@@ -1,3 +1,4 @@
+load('//:subdir_glob.bzl', 'subdir_glob')
 load('//:buckaroo_macros.bzl', 'buckaroo_deps', 'buckaroo_deps_from_package')
 
 macos_preprocessor_flags = [
@@ -104,13 +105,16 @@ cxx_library(
     buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-ogg') +
     buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-flac') +
     buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-vorbis') +
-    buckaroo_deps_from_package('github.com/buckaroo-pm/luadist-freetype') + [
+    buckaroo_deps_from_package('github.com/buckaroo-pm/freetype2') + [
     '//extlibs/headers/AL:al',
     '//extlibs/headers/stb_image:stb_image',
   ],
   platform_deps = [
     ('macos.*', macos_deps),
     ('linux.*', linux_deps),
+  ],
+  licenses = [
+    'license.md',
   ],
   visibility = [
     'PUBLIC',

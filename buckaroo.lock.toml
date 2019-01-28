@@ -1,4 +1,8 @@
-manifest = "5633402eaaaf909567a5a1fc25da7d7a025f389da45abbc0392b1616ca856f98"
+manifest = "3ea9b22a79443eecae6402a61f10295437a8cff26c4f99a7dc1f984d2ef343c8"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/freetype2"
+target = "//:freetype"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/host-app-kit"
@@ -41,10 +45,6 @@ package = "github.com/buckaroo-pm/host-pthread"
 target = "//:pthread"
 
 [[dependency]]
-package = "github.com/buckaroo-pm/luadist-freetype"
-target = "//:freetype"
-
-[[dependency]]
 package = "github.com/buckaroo-pm/pkg-config-gl"
 target = "//:gl"
 
@@ -72,6 +72,10 @@ target = "//:ogg"
 package = "github.com/buckaroo-pm/xiph-vorbis"
 target = "//:vorbis"
 
+[lock."github.com/buckaroo-pm/freetype2"]
+versions = [ "branch=master" ]
+revision = "e3fc929402efa30c5f35a03866413604d47b8f1e"
+
 [lock."github.com/buckaroo-pm/host-app-kit"]
 versions = [ "branch=master" ]
 revision = "ac1f9979586569580ef613292e5c5040c43b8790"
@@ -94,7 +98,7 @@ revision = "fd7081ffe1244afb86c41c2d41d3603f851feae8"
 
 [lock."github.com/buckaroo-pm/host-core-graphics"]
 versions = [ "branch=master" ]
-revision = "56a4e7ba341ab59a97d611ac4d9331d8779e98cb"
+revision = "9e22b73a078725f75798019a474aab717c4c9da9"
 
 [lock."github.com/buckaroo-pm/host-core-services"]
 versions = [ "branch=master" ]
@@ -112,13 +116,13 @@ revision = "183de5e5057c37c69dc5d298781b3c131a3688e4"
 versions = [ "branch=master" ]
 revision = "a62519aa69c8e3243d6065fbf4c1d2de072f86f6"
 
-[lock."github.com/buckaroo-pm/luadist-freetype"]
+[lock."github.com/buckaroo-pm/madler-zlib"]
 versions = [ "branch=master" ]
-revision = "d8840e6ec7304ce2955e8fb6e344cfc348e0ee73"
+revision = "906f727175ca6a7f8943e375467d6e461a55b68d"
 
 [lock."github.com/buckaroo-pm/pkg-config-gl"]
 versions = [ "branch=master" ]
-revision = "8454e3b465a509b0f84c0c8d1ad3709f57a106e2"
+revision = "c8734a6884d0aaa713c059673a103fe58de08084"
 
 [lock."github.com/buckaroo-pm/pkg-config-udev"]
 versions = [ "branch=master" ]

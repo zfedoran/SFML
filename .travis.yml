@@ -38,3 +38,6 @@ before_install:
 script:
   - ./buckaroo-client install
   - buck build -c ui.superconsole=DISABLED //:sfml
+  - buck build -c ui.superconsole=DISABLED //examples/sound
+  - buck build -c ui.superconsole=DISABLED //examples/pong
+  - buck build -c ui.superconsole=DISABLED //examples/opengl
