@@ -108,6 +108,7 @@ cxx_library(
     buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-vorbis') +
     buckaroo_deps_from_package('github.com/buckaroo-pm/freetype2') + [
     '//extlibs/headers/stb_image:stb_image',
+    '//extlibs/headers/AL:al',
   ],
   platform_deps = [
     ('macos.*', macos_deps),
