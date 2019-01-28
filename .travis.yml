@@ -12,6 +12,7 @@ addons:
       - libxrandr-dev
       - libudev-dev
       - libx11-dev
+      - libalut-dev
   homebrew:
     taps:
       - facebook/fb
