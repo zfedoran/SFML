@@ -10,6 +10,8 @@ addons:
       - g++-6
       - gcc-6
       - libxrandr-dev
+      - libudev-dev
+      - libx11-dev
   homebrew:
     taps:
       - facebook/fb
