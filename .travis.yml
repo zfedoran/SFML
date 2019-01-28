@@ -21,11 +21,12 @@ os:
   - osx
 
 env:
-  - BUCKAROO_VERSION=buckaroo-redux-alpha-13
+  - BUCKAROO_VERSION=buckaroo-redux-alpha-14
 
 cache:
   directories:
     - $HOME/.buckaroo/cache
+    - $HOME/Library/Caches/Homebrew
 
 osx_image: xcode9.3
 
