@@ -74,7 +74,7 @@ target = "//:vorbis"
 
 [lock."github.com/buckaroo-pm/freetype2"]
 versions = [ "branch=master" ]
-revision = "e3fc929402efa30c5f35a03866413604d47b8f1e"
+revision = "84f26afcdb641e88f12ac340fdfca17c0c478c37"
 
 [lock."github.com/buckaroo-pm/host-app-kit"]
 versions = [ "branch=master" ]
