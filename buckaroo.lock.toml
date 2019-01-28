@@ -1,4 +1,4 @@
-manifest = "3ea9b22a79443eecae6402a61f10295437a8cff26c4f99a7dc1f984d2ef343c8"
+manifest = "b54476a9a6ab4730af0a34aa9fb788a8a17989eba14e619220a393a042a748e7"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/freetype2"
@@ -47,6 +47,10 @@ target = "//:pthread"
 [[dependency]]
 package = "github.com/buckaroo-pm/pkg-config-gl"
 target = "//:gl"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-openal"
+target = "//:openal"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/pkg-config-udev"
@@ -123,6 +127,10 @@ revision = "906f727175ca6a7f8943e375467d6e461a55b68d"
 [lock."github.com/buckaroo-pm/pkg-config-gl"]
 versions = [ "branch=master" ]
 revision = "c8734a6884d0aaa713c059673a103fe58de08084"
+
+[lock."github.com/buckaroo-pm/pkg-config-openal"]
+versions = [ "branch=master" ]
+revision = "4b28e51717c579646732f654fcbf134cac3f765a"
 
 [lock."github.com/buckaroo-pm/pkg-config-udev"]
 versions = [ "branch=master" ]

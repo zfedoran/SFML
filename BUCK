@@ -70,7 +70,8 @@ linux_deps = \
   buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-x11') + \
   buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-xrandr') + \
   buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-udev') + \
-  buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-gl')
+  buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-gl') + \
+  buckaroo_deps_from_package('github.com/buckaroo-pm/pkg-config-openal')
 
 cxx_library(
   name = 'sfml',
@@ -106,7 +107,6 @@ cxx_library(
     buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-flac') +
     buckaroo_deps_from_package('github.com/buckaroo-pm/xiph-vorbis') +
     buckaroo_deps_from_package('github.com/buckaroo-pm/freetype2') + [
-    '//extlibs/headers/AL:al',
     '//extlibs/headers/stb_image:stb_image',
   ],
   platform_deps = [

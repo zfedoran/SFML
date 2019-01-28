@@ -1,6 +1,10 @@
 targets = [ "//:sfml" ]
 
 [[dependency]]
+package = "github.com/buckaroo-pm/freetype2"
+version = "branch=master"
+
+[[dependency]]
 package = "github.com/buckaroo-pm/host-app-kit"
 version = "branch=master"
 
@@ -41,12 +45,12 @@ package = "github.com/buckaroo-pm/host-pthread"
 version = "branch=master"
 
 [[dependency]]
-package = "github.com/buckaroo-pm/freetype2"
+package = "github.com/buckaroo-pm/pkg-config-gl"
 version = "branch=master"
 
 [[dependency]]
-package = "github.com/buckaroo-pm/pkg-config-gl"
-version = "branch=master"
+package = "github.com/buckaroo-pm/pkg-config-openal"
+version = "*"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/pkg-config-udev"
