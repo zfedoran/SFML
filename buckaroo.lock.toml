@@ -78,7 +78,7 @@ target = "//:vorbis"
 
 [lock."github.com/buckaroo-pm/freetype2"]
 versions = [ "branch=master" ]
-revision = "84f26afcdb641e88f12ac340fdfca17c0c478c37"
+revision = "38f0570b4f0749d061aae41763b0568b50757b36"
 
 [lock."github.com/buckaroo-pm/host-app-kit"]
 versions = [ "branch=master" ]
@@ -122,7 +122,7 @@ revision = "a62519aa69c8e3243d6065fbf4c1d2de072f86f6"
 
 [lock."github.com/buckaroo-pm/madler-zlib"]
 versions = [ "branch=master" ]
-revision = "906f727175ca6a7f8943e375467d6e461a55b68d"
+revision = "76044bba206818f3378c346396f4a33de338d71c"
 
 [lock."github.com/buckaroo-pm/pkg-config-gl"]
 versions = [ "branch=master" ]
