@@ -50,9 +50,14 @@ android_srcs = glob([
   'src/SFML/**/Android/**/*.cpp',
 ])
 
+ios_srcs = glob([
+  'src/SFML/**/iOS/**/*.mm',
+  'src/SFML/**/iOS/**/*.cpp',
+])
+
 platform_srcs = unix_srcs + linux_srcs + macos_srcs + \
   windows_srcs + freebsd_srcs + android_srcs + \
-  openbsd_srcs + egl_srcs
+  openbsd_srcs + egl_srcs + ios_srcs
 
 macos_deps = \
   buckaroo_deps_from_package('github.com/buckaroo-pm/host-core-foundation') + \
@@ -98,6 +103,7 @@ cxx_library(
     ('macos.*', macos_srcs),
     ('windows.*', windows_srcs),
     ('android.*', android_srcs),
+    ('iphone.*', ios_srcs),
   ],
   exported_preprocessor_flags = [
     '-DHAVE_PROTOTYPES=1',

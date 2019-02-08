@@ -121,8 +121,8 @@ versions = [ "branch=master" ]
 revision = "a62519aa69c8e3243d6065fbf4c1d2de072f86f6"
 
 [lock."github.com/buckaroo-pm/madler-zlib"]
-versions = [ "1.0.1" ]
-revision = "58ef5ba6591f866cf24cb18a18c301daa9f5bb11"
+versions = [ "1.2.11" ]
+revision = "cbbc5ea260a454509d0f461de248b8e0b67bc839"
 
 [lock."github.com/buckaroo-pm/pkg-config-gl"]
 versions = [ "branch=master" ]
@@ -150,8 +150,8 @@ revision = "0a1fc1b04fb8279ae35b2928753fc41b813b0041"
 
 [lock."github.com/buckaroo-pm/xiph-ogg"]
 versions = [ "branch=master" ]
-revision = "5e03ad6a7cb1bf944a0129353ea559ca997744a5"
+revision = "eb31a551c48339c07aa2af9fb8baeac7988f4f81"
 
 [lock."github.com/buckaroo-pm/xiph-vorbis"]
 versions = [ "branch=master" ]
-revision = "42a64edcd960eb170aa6b7fef7784794d6d9de28"
+revision = "3ead4e2e4dbaf5fc9c80a059ecf412eec0070256"
