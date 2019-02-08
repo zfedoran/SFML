@@ -1,4 +1,4 @@
-manifest = "b54476a9a6ab4730af0a34aa9fb788a8a17989eba14e619220a393a042a748e7"
+manifest = "3ad594e033341a02789c79b08c1971c641bddd07c2b609c34a0ad2df48bcd206"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/freetype2"
@@ -78,7 +78,7 @@ target = "//:vorbis"
 
 [lock."github.com/buckaroo-pm/freetype2"]
 versions = [ "branch=master" ]
-revision = "38f0570b4f0749d061aae41763b0568b50757b36"
+revision = "74ac6b2ba913d2bedc1289a65e8f18a1547edab6"
 
 [lock."github.com/buckaroo-pm/host-app-kit"]
 versions = [ "branch=master" ]
@@ -121,8 +121,8 @@ versions = [ "branch=master" ]
 revision = "a62519aa69c8e3243d6065fbf4c1d2de072f86f6"
 
 [lock."github.com/buckaroo-pm/madler-zlib"]
-versions = [ "branch=master" ]
-revision = "76044bba206818f3378c346396f4a33de338d71c"
+versions = [ "1.0.1" ]
+revision = "58ef5ba6591f866cf24cb18a18c301daa9f5bb11"
 
 [lock."github.com/buckaroo-pm/pkg-config-gl"]
 versions = [ "branch=master" ]
