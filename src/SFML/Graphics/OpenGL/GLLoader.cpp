@@ -25,7 +25,7 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/GLLoader.hpp>
+#include <SFML/Graphics/OpenGL/GLLoader.hpp>
 #include <SFML/Window/Context.hpp>
 
 static sf::GlFunctionPointer glLoaderGetProcAddress(const char* name)

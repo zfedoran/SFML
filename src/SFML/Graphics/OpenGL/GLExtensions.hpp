@@ -147,7 +147,7 @@
 
 #else
 
-    #include <SFML/Graphics/GLLoader.hpp>
+    #include <SFML/Graphics/OpenGL/GLLoader.hpp>
 
     // SFML requires at a bare minimum OpenGL 1.1 capability
     // All functionality beyond that is optional
