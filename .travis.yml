@@ -1,4 +1,5 @@
 language: cpp
+
 sudo: true
 dist: trusty
 
@@ -44,3 +45,4 @@ script:
   - buck build -c ui.superconsole=DISABLED //examples/sound
   - buck build -c ui.superconsole=DISABLED //examples/pong
   - buck build -c ui.superconsole=DISABLED //examples/opengl
+
