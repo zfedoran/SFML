@@ -1,0 +1,77 @@
+targets = [ "//:sfml" ]
+
+[[dependency]]
+package = "github.com/buckaroo-pm/freetype2"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-app-kit"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-application-services"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-carbon"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-cocoa"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-foundation"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-graphics"
+version = "all(branch=master !any(revision=29a087125d82f24b607076092e3c5997420b0a0e))"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-services"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-io-kit"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-opengl"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-pthread"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-gl"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-openal"
+version = "*"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-udev"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-x11"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-xrandr"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-flac"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-ogg"
+version = "branch=master"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-vorbis"
+version = "branch=master"

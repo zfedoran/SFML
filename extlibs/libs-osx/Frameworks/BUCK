@@ -1,0 +1,62 @@
+prebuilt_apple_framework(
+  name = 'flac', 
+  framework = 'FLAC.framework',
+  preferred_linkage = 'static',
+  visibility = [
+    'PUBLIC', 
+  ], 
+)
+
+prebuilt_apple_framework(
+  name = 'freetype', 
+  framework = 'freetype.framework',
+  preferred_linkage = 'static',
+  visibility = [
+    'PUBLIC', 
+  ], 
+)
+
+prebuilt_apple_framework(
+  name = 'ogg', 
+  framework = 'ogg.framework',
+  preferred_linkage = 'static',
+  visibility = [
+    'PUBLIC', 
+  ], 
+)
+
+prebuilt_apple_framework(
+  name = 'openal', 
+  framework = 'OpenAL.framework',
+  preferred_linkage = 'static',
+  visibility = [
+    'PUBLIC', 
+  ], 
+)
+
+prebuilt_apple_framework(
+  name = 'vorbis', 
+  framework = 'vorbis.framework',
+  preferred_linkage = 'static',
+  visibility = [
+    'PUBLIC', 
+  ], 
+)
+
+prebuilt_apple_framework(
+  name = 'vorbisenc', 
+  framework = 'vorbisenc.framework',
+  preferred_linkage = 'static',
+  visibility = [
+    'PUBLIC', 
+  ], 
+)
+
+prebuilt_apple_framework(
+  name = 'vorbisfile', 
+  framework = 'vorbisfile.framework',
+  preferred_linkage = 'static',
+  visibility = [
+    'PUBLIC', 
+  ], 
+)

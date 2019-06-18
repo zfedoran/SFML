@@ -1,0 +1,157 @@
+manifest = "3ad594e033341a02789c79b08c1971c641bddd07c2b609c34a0ad2df48bcd206"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/freetype2"
+target = "//:freetype"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-app-kit"
+target = "//:app-kit"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-application-services"
+target = "//:application-services"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-carbon"
+target = "//:carbon"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-cocoa"
+target = "//:cocoa"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-foundation"
+target = "//:core-foundation"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-graphics"
+target = "//:core-graphics"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-core-services"
+target = "//:core-services"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-io-kit"
+target = "//:io-kit"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-opengl"
+target = "//:opengl"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/host-pthread"
+target = "//:pthread"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-gl"
+target = "//:gl"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-openal"
+target = "//:openal"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-udev"
+target = "//:udev"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-x11"
+target = "//:x11"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/pkg-config-xrandr"
+target = "//:xrandr"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-flac"
+target = "//:flac"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-ogg"
+target = "//:ogg"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/xiph-vorbis"
+target = "//:vorbis"
+
+[lock."github.com/buckaroo-pm/freetype2"]
+versions = [ "branch=master" ]
+revision = "74ac6b2ba913d2bedc1289a65e8f18a1547edab6"
+
+[lock."github.com/buckaroo-pm/host-app-kit"]
+versions = [ "branch=master" ]
+revision = "ac1f9979586569580ef613292e5c5040c43b8790"
+
+[lock."github.com/buckaroo-pm/host-application-services"]
+versions = [ "branch=master" ]
+revision = "0125114db3ee4abe310305dbbf6d6c7c76f42af9"
+
+[lock."github.com/buckaroo-pm/host-carbon"]
+versions = [ "branch=master" ]
+revision = "fb7fb290b4da3e2bb20b805b14a2624107d20f86"
+
+[lock."github.com/buckaroo-pm/host-cocoa"]
+versions = [ "branch=master" ]
+revision = "72ea2945d7e139d9f4803c726339778e619b8cdb"
+
+[lock."github.com/buckaroo-pm/host-core-foundation"]
+versions = [ "branch=master" ]
+revision = "fd7081ffe1244afb86c41c2d41d3603f851feae8"
+
+[lock."github.com/buckaroo-pm/host-core-graphics"]
+versions = [ "branch=master" ]
+revision = "9e22b73a078725f75798019a474aab717c4c9da9"
+
+[lock."github.com/buckaroo-pm/host-core-services"]
+versions = [ "branch=master" ]
+revision = "017da4f0862b4e646ecff2c514442dd8cd3ade5c"
+
+[lock."github.com/buckaroo-pm/host-io-kit"]
+versions = [ "branch=master" ]
+revision = "68cf79a5a0cecfb6d68896ad29d3b0c001849dd5"
+
+[lock."github.com/buckaroo-pm/host-opengl"]
+versions = [ "branch=master" ]
+revision = "183de5e5057c37c69dc5d298781b3c131a3688e4"
+
+[lock."github.com/buckaroo-pm/host-pthread"]
+versions = [ "branch=master" ]
+revision = "a62519aa69c8e3243d6065fbf4c1d2de072f86f6"
+
+[lock."github.com/buckaroo-pm/madler-zlib"]
+versions = [ "1.2.11" ]
+revision = "cbbc5ea260a454509d0f461de248b8e0b67bc839"
+
+[lock."github.com/buckaroo-pm/pkg-config-gl"]
+versions = [ "branch=master" ]
+revision = "c8734a6884d0aaa713c059673a103fe58de08084"
+
+[lock."github.com/buckaroo-pm/pkg-config-openal"]
+versions = [ "branch=master" ]
+revision = "4b28e51717c579646732f654fcbf134cac3f765a"
+
+[lock."github.com/buckaroo-pm/pkg-config-udev"]
+versions = [ "branch=master" ]
+revision = "fd74bc1c1c21ec906ac6283b4973135b936157f5"
+
+[lock."github.com/buckaroo-pm/pkg-config-x11"]
+versions = [ "branch=master" ]
+revision = "6f292a6166cd3c45c776b294485a24e7d71c0e0c"
+
+[lock."github.com/buckaroo-pm/pkg-config-xrandr"]
+versions = [ "branch=master" ]
+revision = "e350012b5444a4a8c269a38f57ff20886e19fde5"
+
+[lock."github.com/buckaroo-pm/xiph-flac"]
+versions = [ "branch=master" ]
+revision = "0a1fc1b04fb8279ae35b2928753fc41b813b0041"
+
+[lock."github.com/buckaroo-pm/xiph-ogg"]
+versions = [ "branch=master" ]
+revision = "eb31a551c48339c07aa2af9fb8baeac7988f4f81"
+
+[lock."github.com/buckaroo-pm/xiph-vorbis"]
+versions = [ "branch=master" ]
+revision = "3ead4e2e4dbaf5fc9c80a059ecf412eec0070256"

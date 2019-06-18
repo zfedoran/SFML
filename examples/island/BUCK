@@ -1,0 +1,13 @@
+cxx_binary(
+  name = 'island',
+  header_namespace = '',
+  headers = [
+    'stb_perlin.h',
+  ],
+  srcs = [
+    'Island.cpp',
+  ],
+  deps = [
+    '//:sfml',
+  ],
+)

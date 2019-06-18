@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'opengl',
+  srcs = [
+    'OpenGL.cpp',
+  ],
+  deps = [
+    '//:sfml',
+  ],
+)

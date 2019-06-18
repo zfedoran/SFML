@@ -1,0 +1,11 @@
+/buck-out
+/.buckd
+/cache
+/buckaroo
+/buckaroo-packages
+/.buckconfig.d
+.buckconfig.local
+BUCKAROO_DEPS
+buckaroo_macros.bzl
+buckaroo-linux
+buckaroo-macos
